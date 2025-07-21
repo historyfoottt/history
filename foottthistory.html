@@ -282,23 +282,26 @@
         /* Responsive */
         @media (max-width: 768px) {
             .nav {
-                padding: 0 3%;
-                gap: 20px;
+                padding: 0 2%;
+                gap: 10px;
                 overflow-x: hidden;
+                flex-wrap: nowrap;
             }
 
             .logo {
-                font-size: 18px;
+                font-size: 14px;
                 flex-shrink: 0;
+                min-width: auto;
             }
 
             .nav-links {
-                gap: 8px;
-                font-size: 12px;
+                gap: 3px;
+                font-size: 10px;
                 overflow-x: auto;
                 scrollbar-width: none;
                 -ms-overflow-style: none;
-                padding-right: 20px;
+                padding-right: 10px;
+                flex-wrap: nowrap;
             }
 
             .nav-links::-webkit-scrollbar {
@@ -306,10 +309,11 @@
             }
 
             .nav-links li {
-                padding: 6px 10px;
+                padding: 4px 6px;
                 white-space: nowrap;
                 flex-shrink: 0;
-                font-size: 11px;
+                font-size: 9px;
+                min-width: fit-content;
             }
 
             .hero-content h1 {
@@ -341,20 +345,20 @@
 
         @media (max-width: 480px) {
             .nav {
-                padding: 0 2%;
+                padding: 0 1%;
             }
 
             .logo {
-                font-size: 16px;
+                font-size: 12px;
             }
 
             .nav-links {
-                gap: 5px;
+                gap: 2px;
             }
 
             .nav-links li {
-                padding: 4px 8px;
-                font-size: 10px;
+                padding: 3px 5px;
+                font-size: 8px;
             }
 
             .hero-content h1 {
@@ -406,7 +410,7 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-content">
-            <h1>HISTORY</h1>
+            <h1>ИСТОРИЯ СОБЫТИЙ</h1>
             <p>Исследуйте важные моменты через года</p>
             <button class="cta-button" onclick="showYear('2020')">НАЧАТЬ ПУТЕШЕСТВИЕ</button>
         </div>

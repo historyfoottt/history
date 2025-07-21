@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HISTORY</title>
+    <title>История событий</title>
     <style>
         * {
             margin: 0;
@@ -48,6 +48,8 @@
             display: flex;
             list-style: none;
             gap: 40px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         .nav-links li {
@@ -282,19 +284,32 @@
             .nav {
                 padding: 0 3%;
                 gap: 20px;
+                overflow-x: hidden;
             }
 
             .logo {
-                font-size: 20px;
+                font-size: 18px;
+                flex-shrink: 0;
             }
 
             .nav-links {
-                gap: 15px;
-                font-size: 13px;
+                gap: 8px;
+                font-size: 12px;
+                overflow-x: auto;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                padding-right: 20px;
+            }
+
+            .nav-links::-webkit-scrollbar {
+                display: none;
             }
 
             .nav-links li {
-                padding: 6px 12px;
+                padding: 6px 10px;
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 11px;
             }
 
             .hero-content h1 {
@@ -324,6 +339,33 @@
             }
         }
 
+        @media (max-width: 480px) {
+            .nav {
+                padding: 0 2%;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            .nav-links {
+                gap: 5px;
+            }
+
+            .nav-links li {
+                padding: 4px 8px;
+                font-size: 10px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+        }
+
         /* Footer */
         .footer {
             background: #111;
@@ -348,7 +390,7 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav">
-            <div class="logo">HISTORY</div>
+            <div class="logo">История</div>
             <ul class="nav-links">
                 <li data-year="hero" class="active">Главная</li>
                 <li data-year="2020">2020</li>
@@ -364,7 +406,7 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-content">
-            <h1>HISTORY</h1>
+            <h1>ИСТОРИЯ СОБЫТИЙ</h1>
             <p>Исследуйте важные моменты через года</p>
             <button class="cta-button" onclick="showYear('2020')">НАЧАТЬ ПУТЕШЕСТВИЕ</button>
         </div>

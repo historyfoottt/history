@@ -432,145 +432,667 @@
         // Complete events data
         const eventsData = {
             2020: [
-                { date: "1 НОЯ", title: "Создание Униона", category: "houses" }
+                {
+  date: "1 НОЯ",
+  title: "Создание Униона",
+  category: "houses",
+  details: "Унион был одним из первых хаусов в Фут ТТ. Сразу собрал вокруг себя много активных ребят и быстро стал заметным. С тех пор о нём знали почти все, кто заходил в тему."
+}
             ],
             2021: [
-                { date: "16 СЕН", title: "Создание Foot.Magistro", category: "houses" },
-                { date: "17 СЕН", title: "Конфликт Деппая и Вини", category: "individual" },
-                { date: "30 СЕН", title: "Создание Manchester.House", category: "houses" },
-                { date: "6 ДЕК", title: "Первый Золотой Мячь от Айхана", category: "individual" }
+                {
+  date: "6 ДЕК",
+  title: "Первый Золотой Мяч от Айхана",
+  category: "individual",
+  details: "Айхан устроил награждение для 30 участников. Первым победителем стал Илья_Футбол. Это сразу дало мотивацию многим стараться больше и стать лучше."
+},
+{
+  date: "16 СЕН",
+  title: "Создание Foot.Magistro",
+  category: "houses",
+  details: "Магистро сразу отличился — у них был особенный стиль и сильный состав. Многие тогда почувствовали, что начинается что-то новое и крутое."
+},
+{
+  date: "17 СЕН",
+  title: "Конфликт Деппая и Вини",
+  category: "individual",
+  details: "Всё началось внезапно — кто-то говорил про слова Вини, кто-то про соперничество. Но спор стал настолько громким, что про него говорили почти все в Фут ТТ."
+},
+{
+  date: "30 СЕН",
+  title: "Создание Manchester.House",
+  category: "houses",
+  details: "Манчестер сразу выстроился по строгой системе. У них были чёткие планы и крутые переходы. Со временем хаус стал одним из самых узнаваемых."
+}
             ],
             2022: [
-                { date: "4 ЯНВ", title: "Закрытие Foot.Magistro", category: "houses" },
-                { date: "5 ЯНВ", title: "Открытие Foot.Dragon", category: "houses" },
-                { date: "16 ЯНВ", title: "Рак Коржика", category: "individual" },
-                { date: "17 ЯНВ", title: "Открытие ПФТТ", category: "projects" },
-                { date: "29 ЯНВ", title: "Закрытие Foot.Demons", category: "houses" },
-                { date: "30 ЯНВ", title: "Начало конфликта Foot.Inside и Manchester.House", category: "houses" },
-                { date: "2 ФЕВ", title: "Трек \"Лучшие Фут ТТ\" от Липси и Бруно", category: "tiktok" },
-                { date: "6 ФЕВ", title: "100 тысяч в TikTok Киллиан", category: "houses" },
-                { date: "17 ФЕВ", title: "Закрытие Power.Team", category: "houses" },
-                { date: "13 МАР", title: "Закрытие Foot.Max", category: "houses" },
-                { date: "18 АПР", title: "10 тысяч на аккаунте Магистро в TikTok", category: "tiktok" },
-                { date: "24 АПР", title: "Закрытие Manchester.House", category: "houses" },
-                { date: "25 АПР", title: "Закрытие Graceful.Team", category: "houses" },
-                { date: "12 МАЙ", title: "Закрытие Foot.Avengers", category: "houses" },
-                { date: "2 ИЮН", title: "Первый турнир UFTA", category: "projects" },
-                { date: "25 ИЮН", title: "Закрытие Foot.Dragon", category: "houses" },
-                { date: "11 ИЮЛ", title: "Закрытие Foot.Avengers", category: "houses" },
-                { date: "20 ИЮЛ", title: "Закрытие Foot.Mix", category: "houses" },
-                { date: "12 АВГ", title: "Закрытие Samuraway.Team", category: "houses" },
-                { date: "13 СЕН", title: "Возвращение Foot.Mix", category: "houses" },
-                { date: "17 СЕН", title: "Закрытие Synemo", category: "houses" },
-                { date: "25 СЕН", title: "Закрытие Foot.Magistro", category: "houses" },
-                { date: "3 ОКТ", title: "Возвращение Manchester.House", category: "houses" },
-                { date: "6 ОКТ", title: "Закрытие Foot.Legend", category: "houses" },
-                { date: "21 ОКТ", title: "Возвращение Foot.Dragon", category: "houses" },
-                { date: "22 ОКТ", title: "Закрытие Manchester.House", category: "houses" },
-                { date: "23 ОКТ", title: "Закрытие Foot.Demons", category: "houses" },
-                { date: "28 ОКТ", title: "Возвращение Graceful.Team", category: "houses" },
-                { date: "30 ОКТ", title: "Возвращение Foot.Max", category: "houses" },
-                { date: "10 НОЯ", title: "Возвращение Foot.Magistro", category: "houses" },
-                { date: "21 НОЯ", title: "Дибалдо и Катя", category: "individual" },
-                { date: "10 ДЕК", title: "Объединение Magnificent.Team и Foot.Dragon(Создание Darkness.Team)", category: "houses" },
-                { date: "11 ДЕК", title: "Возвращение Foot.Wewirus", category: "houses" }
+                {
+  date: "4 ЯНВ",
+  title: "Закрытие Foot.Magistro",
+  category: "houses",
+  details: "Илья_Футбол решил закрыть хаус. В то время Магистро уже начал терять форму, и команда просто не вытянула дальше."
+},
+{
+  date: "5 ЯНВ",
+  title: "Открытие Foot.Dragon",
+  category: "houses",
+  details: "Новый хаус громко ворвался в игру. В команде были Айхан, Дибалдо, Мартин и другие. Они сразу показали уровень."
+},
+{
+  date: "16 ЯНВ",
+  title: "Рак Коржика",
+  category: "individual",
+  details: "Коржик написал всем, что у него рак. Позже оказалось, что это неправда. Люди были в шоке, многие почувствовали себя обманутыми."
+},
+{
+  date: "17 ЯНВ",
+  title: "Открытие ПФТТ",
+  category: "projects",
+  details: "Зере запустил ПФТТ — уникальный проект, где всё было собрано в одном месте. Многие в него сразу втянулись."
+},
+{
+  date: "29 ЯНВ",
+  title: "Закрытие Foot.Demons",
+  category: "houses",
+  details: "У хауса был хороший старт, но внутри всё было не очень. В итоге всё развалилось и проект закрыли."
+},
+{
+  date: "30 ЯНВ",
+  title: "Начало конфликта Foot.Inside и Manchester.House",
+  category: "houses",
+  details: "Началось всё с обычных разногласий, но дальше — хуже. Конфликт растянулся надолго и разделил всех на два лагеря."
+},
+{
+  date: "2 ФЕВ",
+  title: "Трек \"Лучшие Фут ТТ\" от Липси и Бруно",
+  category: "tiktok",
+  details: "Трек стал настоящим хитом. Его ставили в каждом хаусе, и он реально объединял всех тогдашних участников."
+},
+{
+  date: "6 ФЕВ",
+  title: "100 тысяч в TikTok Киллиан",
+  category: "houses",
+  details: "Киллиан стал первым, кто дошёл до 100к подписчиков. Это был момент, когда поняли — Фут ТТ может расти очень сильно."
+},
+{
+  date: "17 ФЕВ",
+  title: "Закрытие Power.Team",
+  category: "houses",
+  details: "Ребята не справились с управлением. Не хватило стабильности, и проект свернули."
+},
+{
+  date: "13 МАР",
+  title: "Закрытие Foot.Max",
+  category: "houses",
+  details: "Хаус закрылся, чтобы потом вернуться в новом формате. На тот момент они просто перегорели."
+}
             ],
             2023: [
-                { date: "3 ЯНВ", title: "Возвращение Foot.Mix", category: "houses" },
-                { date: "9 ЯНВ", title: "Закрытие Revenge.Team", category: "houses" },
-                { date: "15 ЯНВ", title: "1000 подписчиков ПФТТ", category: "projects" },
-                { date: "16 ЯНВ", title: "Закрытие Darkness.Team", category: "houses" },
-                { date: "17 ЯНВ", title: "Возвращение Foot.Magistro", category: "houses" },
-                { date: "26 ЯНВ", title: "Открытие Foot.Power", category: "houses" },
-                { date: "1 ФЕВ", title: "Закрытие Foot.Power", category: "houses" },
-                { date: "3 ФЕВ", title: "Возвращение Foot.Power", category: "houses" },
-                { date: "7 ФЕВ", title: "Возвращение Magnificent.Team", category: "houses" },
-                { date: "15 АПР", title: "Закрытие Magnificent.Team", category: "houses" },
-                { date: "20 АПР", title: "Уход Айхана из Фут ТТ", category: "individual" },
-                { date: "20 АПР", title: "Уход Дибалдо из Фут ТТ", category: "individual" },
-                { date: "24 АПР", title: "Зере уходит из ПФТТ", category: "projects" },
-                { date: "1 ИЮН", title: "Закрытие Foot.Magistro", category: "houses" },
-                { date: "4 ИЮН", title: "Санчо в Foot.Mix", category: "individual" },
-                { date: "6 ИЮН", title: "Закрытие Manchester.House", category: "houses" },
-                { date: "18 ИЮН", title: "Закрытие Foot.Water", category: "houses" },
-                { date: "23 ИЮН", title: "Возвращение Graceful.Team", category: "houses" },
-                { date: "25 ИЮН", title: "Закрытие Foot.Power", category: "houses" },
-                { date: "26 ИЮН", title: "Возвращение Darkness.Team", category: "houses" },
-                { date: "29 ИЮН", title: "Закрытие Foot.Surrendhell", category: "houses" },
-                { date: "1 ИЮЛ", title: "Открытие Foot.Vipers вместо Graceful.Team", category: "houses" },
-                { date: "15 ИЮЛ", title: "Перестройка Foot.Union", category: "houses" },
-                { date: "17 ИЮЛ", title: "Закрытие Darkness.Team", category: "houses" },
-                { date: "18 ИЮЛ", title: "Возвращение Foot.Destiny", category: "houses" },
-                { date: "22 ИЮЛ", title: "Возвращение Foot.Magistro", category: "houses" },
-                { date: "7 АВГ", title: "Закрытие Manchester.House", category: "houses" },
-                { date: "8 АВГ", title: "Закрытие Foot.Destiny", category: "houses" },
-                { date: "11 АВГ", title: "Уход Санчо из Фут ТТ", category: "individual" },
-                { date: "30 АВГ", title: "Открытие Foot.Best", category: "houses" },
-                { date: "30 АВГ", title: "Закрытие Foot.Vipers", category: "houses" },
-                { date: "17 СЕН", title: "Возвращение Foot.Wewirus", category: "houses" },
-                { date: "26 СЕН", title: "Нфорс в Foot.Union", category: "individual" },
-                { date: "28 СЕН", title: "Закрытие Foot.Best", category: "houses" },
-                { date: "2 ОКТ", title: "Возвращение Негана в ПФТТ", category: "projects" },
-                { date: "15 ОКТ", title: "Закрытие Foot.Wewirus", category: "houses" },
-                { date: "15 НОЯ", title: "Возвращение Foot.Dragon", category: "houses" },
-                { date: "3 ДЕК", title: "Возвращение Foot.Mix", category: "houses" },
-                { date: "25 ДЕК", title: "Закрытие Foot.Dragon", category: "houses" }
-            ],
-            2024: [
-                { date: "4 ЯНВ", title: "Закрытие Foot.Mix", category: "houses" },
-                { date: "6 ЯНВ", title: "Возвращение Vipers.Team", category: "houses" },
-                { date: "27 ЯНВ", title: "Супер Золотой Мяч", category: "projects" },
-                { date: "17 ФЕВ", title: "Закрытие Vipers.Team", category: "houses" },
-                { date: "1 МАР", title: "Закрытие Eternal.Team", category: "houses" },
-                { date: "9 МАР", title: "Возвращение Foot.Elegant", category: "houses" },
-                { date: "7 АПР", title: "Закрытие The.Magnificence", category: "houses" },
-                { date: "11 АПР", title: "Возвращение Foot.Recenture", category: "houses" },
-                { date: "3 МАЙ", title: "Возвращение Foot.Magistro", category: "houses" },
-                { date: "9 МАЙ", title: "Закрытие Foot.Recenture", category: "houses" },
-                { date: "2 ИЮН", title: "Возвращение Foot.Wewirus", category: "houses" },
-                { date: "10 ИЮН", title: "Закрытие Foot.Endless", category: "houses" },
-                { date: "16 ИЮН", title: "Возвращение Foot.Dragon", category: "houses" },
-                { date: "3 ИЮЛ", title: "Возвращение Foot.Inside", category: "houses" },
-                { date: "9 ИЮЛ", title: "Закрытие Foot.Dragon", category: "houses" },
-                { date: "16 ИЮЛ", title: "Возвращение Foot.Mix", category: "houses" },
-                { date: "18 ИЮЛ", title: "Возвращение Manchester.House", category: "houses" },
-                { date: "3 АВГ", title: "Закрытие Foot.Wewirus", category: "houses" },
-                { date: "3 АВГ", title: "Закрытие Foot.Inside", category: "houses" },
-                { date: "9 АВГ", title: "Возвращение Foot.Crayst", category: "houses" },
-                { date: "10 АВГ", title: "Возвращение Зере, Неганаа, Макпро и Риви в ПФТТ", category: "projects" },
-                { date: "26 АВГ", title: "Возвращение Foot.Bristol", category: "houses" },
-                { date: "28 АВГ", title: "Первый Фильм Фут ТТ от ПФТТ", category: "projects" },
-                { date: "8 СЕН", title: "Возвращение Foot.Dragon", category: "houses" },
-                { date: "21 СЕН", title: "Закрытие Foot.Crayst", category: "houses" },
-                { date: "29 СЕН", title: "Первый Сайт Фут ТТ от ПФТТ", category: "projects" },
-                { date: "20 ОКТ", title: "Возвращение Foot.Vipers", category: "houses" },
-                { date: "31 ОКТ", title: "Закрытие Foot.Bristol", category: "houses" },
-                { date: "21 НОЯ", title: "Закрытие Manchester.House", category: "houses" },
-                { date: "7 ДЕК", title: "Закрытие Foot.Dragon", category: "houses" },
-                { date: "30 ДЕК", title: "Возвращение Foot.Wewirus", category: "houses" }
-            ],
-            2025: [
-                { date: "3 ЯНВ", title: "Закрытие Foot.Mix", category: "houses" },
-                { date: "4 ЯНВ", title: "Закрытие Foot.Magistro", category: "houses" },
-                { date: "12 ЯНВ", title: "Возвращение Eternal.Team", category: "houses" },
-                { date: "17 ЯНВ", title: "Закрытие Foot.Vipers", category: "houses" },
-                { date: "2 МАР", title: "Закрытие Foot.Union", category: "houses" },
-                { date: "2 МАР", title: "Закрытие Foot.Desire", category: "houses" },
-                { date: "17 МАР", title: "Возвращение Darkness.Team", category: "houses" },
-                { date: "4 АПР", title: "Закрытие Foot.Reckless", category: "houses" },
-                { date: "27 АПР", title: "Закрытие Eternal.Team", category: "houses" },
-                { date: "28 АПР", title: "Открытие Mirage.Team", category: "houses" },
-                { date: "20 МАЙ", title: "Закрытие Mirage.Team", category: "houses" },
-                { date: "2 ИЮН", title: "Возвращение Foot.Dragon", category: "houses" },
-                { date: "20 ИЮН", title: "Открытие Foot.Breath", category: "houses" },
-                { date: "25 ИЮН", title: "Закрытие Foot.Dragon", category: "houses" },
-                { date: "29 ИЮН", title: "Закрытие Foot.Wewirus", category: "houses" },
-                { date: "30 ИЮН", title: "Открытие The.Eventide", category: "houses" },
-                { date: "10 ИЮЛ", title: "Открытие Foot.Rebel", category: "houses" },
-                { date: "15 ИЮЛ", title: "Открытие Magnificent.Team", category: "houses" },
-                { date: "16 ИЮЛ", title: "Закрытие Foot.Breath", category: "houses" }
-            ]
-        };
+        {
+  date: "15 ЯНВ",
+  title: "1000 подписчиков ПФТТ",
+  category: "projects",
+  details: "Проект ПФТТ набрал первую 1000 подписчиков. Зере выложил пост в честь этого, а ребята устроили настоящее празднование. Было видно, что всё идёт в гору."
+},
+{
+  date: "16 ЯНВ",
+  title: "Закрытие Darkness.Team",
+  category: "houses",
+  details: "Один из стабильных хаусов неожиданно закрылся. Хотя всё вроде шло нормально, внутри начались проблемы, и команда распалась."
+},
+{
+  date: "17 ЯНВ",
+  title: "Возвращение Foot.Magistro",
+  category: "houses",
+  details: "Магистро вернулся с новым составом. Сделали громкие переходы и начали всё заново. Многие восприняли это как второй шанс для хауса."
+},
+{
+  date: "26 ЯНВ",
+  title: "Открытие Foot.Power",
+  category: "houses",
+  details: "Появился новый хаус с амбициями. Сразу собралось много активных ребят, которые хотели сделать что-то яркое."
+},
+{
+  date: "1 ФЕВ",
+  title: "Закрытие Foot.Power",
+  category: "houses",
+  details: "Проект не продержался и недели. Что-то не сработало, и участники разошлись по другим хаусам."
+},
+{
+  date: "3 ФЕВ",
+  title: "Возвращение Foot.Power",
+  category: "houses",
+  details: "Через пару дней хаус снова открылся. Те же участники решили попробовать ещё раз, уже с другим подходом."
+},
+{
+  date: "7 ФЕВ",
+  title: "Возвращение Magnificent.Team",
+  category: "houses",
+  details: "Легендарный хаус снова появился. Вернулись с уверенностью, что могут сделать лучше, чем раньше."
+},
+{
+  date: "15 АПР",
+  title: "Закрытие Magnificent.Team",
+  category: "houses",
+  details: "После 67 дней работы проект снова закрылся. Участники ушли в другие более активные хаусы."
+},
+{
+  date: "20 АПР",
+  title: "Уход Айхана из Фут ТТ",
+  category: "individual",
+  details: "Айхан — один из самых узнаваемых дизайнеров — решил уйти. Его старые работы остались как память."
+},
+{
+  date: "20 АПР",
+  title: "Уход Дибалдо из Фут ТТ",
+  category: "individual",
+  details: "Следом за Айханом ушёл и Дибалдо. Он был одним из старожилов, и многим было жаль его уход."
+},
+{
+  date: "24 АПР",
+  title: "Зере уходит из ПФТТ",
+  category: "projects",
+  details: "Зере покинул ПФТТ. Это вызвало много разговоров и догадок — проект без него стал совсем другим."
+},
+{
+  date: "1 ИЮН",
+  title: "Закрытие Foot.Magistro",
+  category: "houses",
+  details: "Магистро снова закрылся. Хотя и пытались что-то изменить, не получилось удержать проект на плаву."
+},
+{
+  date: "4 ИЮН",
+  title: "Санчо в Foot.Mix",
+  category: "individual",
+  details: "Санчо — талантливый дизайнер — перешёл в Foot.Mix. Это сильно усилило состав хауса."
+},
+{
+  date: "6 ИЮН",
+  title: "Закрытие Manchester.House",
+  category: "houses",
+  details: "Манчестер завершил свою историю. Было много крутых моментов, и участникам сказали спасибо за вклад."
+},
+{
+  date: "18 ИЮН",
+  title: "Закрытие Foot.Water",
+  category: "houses",
+  details: "Хаус завершил работу. У них был узнаваемый стиль, который многие запомнили."
+},
+{
+  date: "23 ИЮН",
+  title: "Возвращение Graceful.Team",
+  category: "houses",
+  details: "Хаус вернулся с обновлённой концепцией. Команда сразу взялась за работу и старалась делать круто."
+},
+{
+  date: "25 ИЮН",
+  title: "Закрытие Foot.Power",
+  category: "houses",
+  details: "Foot.Power снова закрылся. Это уже был финал. Участники пошли по другим проектам."
+},
+{
+  date: "26 ИЮН",
+  title: "Возвращение Darkness.Team",
+  category: "houses",
+  details: "После долгого перерыва хаус вернулся. Все были рады снова видеть старых участников."
+},
+{
+  date: "29 ИЮН",
+  title: "Закрытие Foot.Surrendhell",
+  category: "houses",
+  details: "Хаус продержался меньше месяца. Не получилось собрать крепкую команду, и всё быстро закончилось."
+},
+{
+  date: "1 ИЮЛ",
+  title: "Открытие Foot.Vipers вместо Graceful.Team",
+  category: "houses",
+  details: "Graceful.Team сменил название и стал Foot.Vipers. Состав остался тот же, просто решили начать с чистого листа."
+},
+{
+  date: "15 ИЮЛ",
+  title: "Перестройка Foot.Union",
+  category: "houses",
+  details: "В хаусе всё поменяли — и структуру, и подход. Теперь команда работала по новым правилам."
+},
+{
+  date: "17 ИЮЛ",
+  title: "Закрытие Darkness.Team",
+  category: "houses",
+  details: "Спустя 21 день после возвращения хаус снова закрылся. Не смогли удержаться."
+},
+{
+  date: "18 ИЮЛ",
+  title: "Возвращение Foot.Destiny",
+  category: "houses",
+  details: "Хаус вернулся с новыми лицами и новыми идеями. Все ждали, что будет дальше."
+},
+{
+  date: "22 ИЮЛ",
+  title: "Возвращение Foot.Magistro",
+  category: "houses",
+  details: "Магистро вернулся уже в третий раз. На этот раз снова набрали дизайнеров и пошли вперёд."
+},
+{
+  date: "7 АВГ",
+  title: "Закрытие Manchester.House",
+  category: "houses",
+  details: "Хаус окончательно закрылся. После всего, что они сделали, осталась большая история."
+},
+{
+  date: "8 АВГ",
+  title: "Закрытие Foot.Destiny",
+  category: "houses",
+  details: "Destiny закрылся спустя всего 20 дней. Что-то не сработало, и команда разошлась."
+},
+{
+  date: "11 АВГ",
+  title: "Уход Санчо из Фут ТТ",
+  category: "individual",
+  details: "Санчо покинул Фут ТТ. Он был одним из самых сильных дизайнеров — о нём будут помнить."
+},
+{
+  date: "30 АВГ",
+  title: "Открытие Foot.Best",
+  category: "houses",
+  details: "Появился новый хаус, который хотел стать лучшим. У них были большие планы и амбиции."
+},
+{
+  date: "30 АВГ",
+  title: "Закрытие Foot.Vipers",
+  category: "houses",
+  details: "Vipers закрылись спустя 2 месяца. Хаус не оправдал ожиданий и ушёл в архив."
+},
+{
+  date: "17 СЕН",
+  title: "Возвращение Foot.Wewirus",
+  category: "houses",
+  details: "Хаус снова вернулся, сохранив свой фирменный стиль. Это порадовало тех, кто следил за ними с самого начала."
+},
+{
+  date: "26 СЕН",
+  title: "Нфорс в Foot.Union",
+  category: "individual",
+  details: "Опытный дизайнер Нфорс перешёл в Union. Это был сильный апгрейд для команды."
+},
+{
+  date: "28 СЕН",
+  title: "Закрытие Foot.Best",
+  category: "houses",
+  details: "Проект не продержался и месяца. Все поняли, что лучше остановиться, чем тянуть дальше."
+},
+{
+  date: "2 ОКТ",
+  title: "Возвращение Негана в ПФТТ",
+  category: "projects",
+  details: "Неган, один из тех, кто стоял у начала ПФТТ, снова вернулся. Это вдохнуло новую жизнь в проект."
+},
+{
+  date: "15 ОКТ",
+  title: "Закрытие Foot.Wewirus",
+  category: "houses",
+  details: "Хаус снова закрылся. Это уже был не первый раз, но в этот раз всё выглядело окончательно."
+},
+{
+  date: "15 НОЯ",
+  title: "Возвращение Foot.Dragon",
+  category: "houses",
+  details: "Драгон снова с нами! Команда набрала новых участников и обещала много интересного."
+}
+    ],
+           2024: [
+  {
+    date: "4 ЯНВ",
+    title: "Закрытие Mix",
+    category: "houses",
+    details:
+      "Хаус Микс закрылся, участники разошлись по другим проектам. Было немного жаль, но такое случается, когда люди ищут новые возможности и пути развития.",
+  },
+  {
+    date: "6 ЯНВ",
+    title: "Возвращение Vipers",
+    category: "houses",
+    details:
+      "Хаус Вайперс вернулся к работе после перерыва. Многие рады снова видеть знакомых участников и ждут свежих и интересных проектов.",
+  },
+  {
+    date: "27 ЯНВ",
+    title: "Супер Золотой Мяч",
+    category: "projects",
+    details:
+      "Прошло торжественное награждение лучших участников. Победители получили заслуженные призы, а атмосфера была очень тёплой и вдохновляющей.",
+  },
+  {
+    date: "17 ФЕВ",
+    title: "Закрытие Vipers",
+    category: "houses",
+    details:
+      "Хаус Вайперс снова закрылся. Всем участникам пожелали удачи в новых начинаниях, а те, кто остался, уже строят планы на будущее.",
+  },
+  {
+    date: "1 МАР",
+    title: "Закрытие Eternal",
+    category: "houses",
+    details:
+      "Хаус Этернал прекратил работу. Многие вспоминают лучшие проекты и благодарят за большой вклад в развитие.",
+  },
+  {
+    date: "9 МАР",
+    title: "Возвращение Elegant",
+    category: "houses",
+    details:
+      "Хаус Элегант снова начал работать с новыми силами и идеями. Участники готовы создавать крутые проекты и радовать своих поклонников.",
+  },
+  {
+    date: "7 АПР",
+    title: "Закрытие Magnificence",
+    category: "houses",
+    details:
+      "Хаус Магнифиценс завершил свою деятельность. Всем участникам выразили благодарность за упорный труд и вклад в общее дело.",
+  },
+  {
+    date: "11 АПР",
+    title: "Возвращение Recenture",
+    category: "houses",
+    details:
+      "Хаус Ресенту снова с нами! Возвращение встретили с радостью, впереди много планов и новых идей.",
+  },
+  {
+    date: "3 МАЙ",
+    title: "Возвращение Magistro",
+    category: "houses",
+    details:
+      "Легендарный хаус Магистро вернулся! Все с нетерпением ждут новых проектов от опытных участников.",
+  },
+  {
+    date: "9 МАЙ",
+    title: "Закрытие Recenture",
+    category: "houses",
+    details:
+      "Короткий, но активный период работы Ресенту подошёл к концу. Жаль, что не получилось развиваться дальше.",
+  },
+  {
+    date: "2 ИЮН",
+    title: "Возвращение Wewirus",
+    category: "houses",
+    details:
+      "Хаус Вевирус возобновил работу после перерыва. Старые участники вернулись, и в команде появились новые идеи.",
+  },
+  {
+    date: "10 ИЮН",
+    title: "Закрытие Endless",
+    category: "houses",
+    details:
+      "Хаус Эндлесс закрылся после долгого пути. Спасибо всем, кто участвовал и делал классные проекты.",
+  },
+  {
+    date: "16 ИЮН",
+    title: "Возвращение Dragon",
+    category: "houses",
+    details:
+      "Хаус Драгон снова в строю! Участники готовят новые проекты и планируют удивлять всех своей работой.",
+  },
+  {
+    date: "3 ИЮЛ",
+    title: "Возвращение Inside",
+    category: "houses",
+    details:
+      "Хаус Инсайд вернулся с новыми идеями и свежими участниками. Ждём интересных и качественных проектов.",
+  },
+  {
+    date: "9 ИЮЛ",
+    title: "Закрытие Dragon",
+    category: "houses",
+    details:
+      "Короткий период работы Драгон завершён. Участники перешли в другие активные хаусы.",
+  },
+  {
+    date: "16 ИЮЛ",
+    title: "Возвращение Mix",
+    category: "houses",
+    details:
+      "Хаус Микс снова с нами после перерыва. Новый состав обещает много интересных проектов и свежих идей.",
+  },
+  {
+    date: "18 ИЮЛ",
+    title: "Возвращение Manchester",
+    category: "houses",
+    details:
+      "Хаус Манчестер возобновил деятельность. Любители спортивного стиля рады видеть команду снова в деле.",
+  },
+  {
+    date: "3 АВГ",
+    title: "Закрытие Wewirus",
+    category: "houses",
+    details:
+      "Хаус Вевирус завершил свой последний сезон. Большое спасибо участникам за творчество и старания.",
+  },
+  {
+    date: "3 АВГ",
+    title: "Закрытие Inside",
+    category: "houses",
+    details:
+      "Хаус Инсайд закрыл двери. Надеемся увидеть участников в новых проектах и с новыми идеями.",
+  },
+  {
+    date: "9 АВГ",
+    title: "Возвращение Crayst",
+    category: "houses",
+    details:
+      "Хаус Крейст вернулся! Старые участники собрались вместе и готовы создавать новые проекты.",
+  },
+  {
+    date: "10 АВГ",
+    title: "Возвращение Зере, Неганаа, Макпро и Риви в ПФТТ",
+    category: "projects",
+    details:
+      "Основатели вернулись в главный проект. Это событие стало большим праздником для всех, кто следит за развитием.",
+  },
+  {
+    date: "26 АВГ",
+    title: "Возвращение Bristol",
+    category: "houses",
+    details:
+      "Хаус Бристол снова с нами после долгого отсутствия. Возвращение винтажного стиля принесло много свежих идей.",
+  },
+  {
+    date: "28 АВГ",
+    title: "Первый фильм Фут ТТ от ПФТТ",
+    category: "projects",
+    details:
+      "Выпущен первый документальный фильм о проекте. Это важное событие помогает лучше понять историю и развитие.",
+  },
+  {
+    date: "8 СЕН",
+    title: "Возвращение Dragon",
+    category: "houses",
+    details:
+      "Хаус Драгон снова в деле! Упрощённая структура позволит быстрее создавать новые проекты и радовать всех.",
+  },
+  {
+    date: "21 СЕН",
+    title: "Закрытие Crayst",
+    category: "houses",
+    details:
+      "Крайст закрылся после активного периода. Всем участникам спасибо за труд и творчество.",
+  },
+  {
+    date: "29 СЕН",
+    title: "Первый сайт Фут ТТ от ПФТТ",
+    category: "projects",
+    details:
+      "Запущен официальный сайт с архивом всех лучших проектов. Теперь всё собрано в одном месте и доступно для всех.",
+  },
+  {
+    date: "20 ОКТ",
+    title: "Возвращение Vipers",
+    category: "houses",
+    details:
+      "Хаус Вайперс снова в строю! Их контрастный стиль обещает яркие и запоминающиеся проекты.",
+  },
+  {
+    date: "31 ОКТ",
+    title: "Закрытие Bristol",
+    category: "houses",
+    details:
+      "Хаус Бристол завершил работу. Спасибо всем за уникальный стиль и творческую энергию.",
+  },
+  {
+    date: "21 НОЯ",
+    title: "Закрытие Manchester",
+    category: "houses",
+    details:
+      "Хаус Манчестер окончательно закрылся. Было много классных моментов, пусть у всех впереди будут новые успехи.",
+  },
+  {
+    date: "7 ДЕК",
+    title: "Закрытие Dragon",
+    category: "houses",
+    details:
+      "Хаус Драгон снова завершил работу. Всем, кто был с ними, пожелали удачи и вдохновения в новых проектах.",
+  },
+  {
+    date: "30 ДЕК",
+    title: "Возвращение Wewirus",
+    category: "houses",
+    details:
+      "Хаус Вевирус вернулся перед Новым годом. Отличный подарок для всех участников, которые ждут новых идей.",
+  }
+],
+2025: [
+  {
+    date: "3 ЯНВ",
+    title: "Закрытие Mix",
+    category: "houses",
+    details:
+      "Хаус Микс закрылся в начале года. Участники разошлись по другим проектам, чтобы продолжать творить и развиваться.",
+  },
+  {
+    date: "4 ЯНВ",
+    title: "Закрытие Magistro",
+    category: "houses",
+    details:
+      "Легендарный хаус Магистро завершил свою историю. За годы работы было много ярких проектов и крутых моментов.",
+  },
+  {
+    date: "12 ЯНВ",
+    title: "Возвращение Eternal",
+    category: "houses",
+    details:
+      "Хаус Этернал возобновил работу с международным составом и новыми технологиями. Готовы удивлять и радовать всех.",
+  },
+  {
+    date: "17 ЯНВ",
+    title: "Закрытие Vipers",
+    category: "houses",
+    details:
+      "Хаус Вайперс закрылся после почти трёх месяцев активности. Всем участникам признали их труд и усилия.",
+  },
+  {
+    date: "2 МАР",
+    title: "Закрытие Union",
+    category: "houses",
+    details:
+      "Старейший хаус Юнион завершил деятельность. Это конец целой эпохи, но память о ней останется.",
+  },
+  {
+    date: "2 МАР",
+    title: "Закрытие Desire",
+    category: "houses",
+    details:
+      "Дизайр прекратил существование по решению руководства. Участники перешли в другие проекты.",
+  },
+  {
+    date: "17 МАР",
+    title: "Возвращение Darkness",
+    category: "houses",
+    details:
+      "Даркнесс снова с нами! Их монохромный стиль вдохновляет многих и придаёт проектам особую атмосферу.",
+  },
+  {
+    date: "4 АПР",
+    title: "Закрытие Reckless",
+    category: "houses",
+    details:
+      "Хаус Реклесс закрылся из-за организационных проблем. Все надеются, что команда вернется в будущем.",
+  },
+  {
+    date: "27 АПР",
+    title: "Закрытие Eternal",
+    category: "houses",
+    details:
+      "Етернал снова прекратил работу. Эксперименты и новые идеи пока на паузе, но надежда на возвращение остаётся.",
+  },
+  {
+    date: "28 АПР",
+    title: "Открытие Mirage",
+    category: "houses",
+    details:
+      "Мираж начал работу с уникальными оптическими эффектами. Команда обещает много свежих и необычных проектов.",
+  },
+  {
+    date: "20 МАЙ",
+    title: "Закрытие Mirage",
+    category: "houses",
+    details:
+      "Мираж завершил короткую, но яркую историю. Спасибо всем, кто участвовал и создавал проекты вместе.",
+  },
+  {
+    date: "2 ИЮН",
+    title: "Возвращение Dragon",
+    category: "houses",
+    details:
+      "Драгон вернулся уже в пятый раз! Новая упрощённая система поможет работать быстрее и эффективнее.",
+  },
+  {
+    date: "20 ИЮН",
+    title: "Открытие Breath",
+    category: "houses",
+    details:
+      "Бреаф основан на свободном творчестве без строгих дедлайнов. Здесь каждый работает в своём ритме и создает, что хочет.",
+  },
+  {
+    date: "25 ИЮН",
+    title: "Закрытие Dragon",
+    category: "houses",
+    details:
+      "Драгон снова закрылся. Участники разошлись по другим проектам, но опыт останется с ними.",
+  },
+  {
+    date: "29 ИЮН",
+    title: "Закрытие Wewirus",
+    category: "houses",
+    details:
+      "Вевирус завершил работу после полугода. Технические разработки передали ПФТТ для дальнейшего развития.",
+  },
+  {
+    date: "30 ИЮН",
+    title: "Открытие The.Eventide",
+    category: "houses",
+    details:
+      "Евентайд создан с тёмными цветами для вечерних проектов. Команда обещает много интересного.",
+  },
+  {
+    date: "10 ИЮЛ",
+    title: "Открытие Rebel",
+    category: "houses",
+    details:
+      "Ребел появился с альтернативным подходом и свободой творчества. Здесь ценят нестандартные решения и индивидуальность.",
+  },
+  {
+    date: "15 ИЮЛ",
+    title: "Открытие Magnificent",
+    category: "houses",
+    details:
+      "Магнифицент вернулся с фокусом на премиальные и эксклюзивные проекты. Впереди много качественных работ.",
+  },
+  {
+    date: "16 ИЮЛ",
+    title: "Закрытие Breath",
+    category: "houses",
+    details:
+      "Бреф просуществовал недолго. Идея свободы творчества не прижилась, но опыт был полезен всем участникам.",
+  }
+]};
 
         // Function to create event card HTML
         function createEventCard(event) {
